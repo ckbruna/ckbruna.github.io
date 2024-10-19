@@ -1567,9 +1567,7 @@ color: #ffffff; }
 	position: relative;
 }
 
-.section-holder{
-	margin-bottom: 100px;
-}
+
 
 /* HOME 1 SECTIONS */
 
@@ -3304,7 +3302,6 @@ aside table caption,
 .widgettitle,
 .el-smalltitle,
 .el-subtitle{
-	margin-bottom: 30px;
 	position: relative;
 	font-size: 15px;
 	display: inline-block;
@@ -3625,7 +3622,7 @@ footer .container {
 }
 
 .copyright {
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 .footer-copy {
@@ -3710,6 +3707,23 @@ footer .container {
 *
 * 
 */
+
+@media (max-width: 768px) {
+    .img-fluid,
+	{
+        width: 100%; /* Define a largura específica para dispositivos móveis */
+        height: auto; /* Define a altura específica para dispositivos móveis */
+    }
+	.single-post-content img,
+	{
+        width: 100%; /* Define a largura específica para dispositivos móveis */
+        height: auto; /* Define a altura específica para dispositivos móveis */
+    }
+	.custom-page-template img  {
+        width: 100%; /* Define a largura específica para dispositivos móveis */
+        height: auto; /* Define a altura específica para dispositivos móveis */
+    }
+}
 
 .img-fluid,
 .single-post-content img,
@@ -3820,7 +3834,6 @@ button, input, optgroup, select, textarea {
 .read-more:after,
 .read-more-v2:after,
 .el-btn .elementor-button .elementor-button-text:after{
-	content: '';
     position: relative;
     width: 9px;
     background-color: #ffffff;
